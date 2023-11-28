@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #quiz-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="start-container">
+    <h1>Code Quiz</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container">
+    <h2>Question:</h2>
+    <p id="question">The CSS Box Model consists of the following components: margin, padding, border, and content.</p>
+    <button onclick="checkAnswer(true)">true</button>
+    <button onclick="checkAnswer(false)">false</button>
+    <p id="feedback"></p>
+    <p id="timer">Time: <span id="time">60</span> seconds</p>
+  </div>
+
+  <div id="end-container" style="display: none;">
+    <h2>Game Over</h2>
+    <p>Your score: <span id="score">0</span></p>
+    <label for="initials">Enter your initials:</label>
+    <input type="text" id="initials">
+    <button onclick="saveScore()">Save Score</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
