@@ -52,27 +52,7 @@ function endQuiz() {
 
 function saveScore() {
     const initials = document.getElementById('initials').value;
-  
-    const scoreData = {
-      initials: initials,
-      score: score
-    };
-  
-    fetch('https://example.com/scores', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(scoreData),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Score submitted successfully:', data);
-    })
-    .catch(error => {
-      console.error('Error submitting score:', error);
-    });
-  }
+    console.log('Initials:', initials, 'Score:', score
 
 function getQuestionText() {
   
@@ -86,7 +66,7 @@ function getQuestionText() {
     case 4:
         return 'Media queries in CSS are used to create responsive web designs that adapt to different screen sizes.'
     case 5:
-        return 'The href command is ised to creaste a link in html.'
+        return 'The href command is used to creaste a link in html.'
     default:
       return 'No more questions';
   }
