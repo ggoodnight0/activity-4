@@ -51,8 +51,10 @@ function endQuiz() {
 }
 
 function saveScore() {
-    const initials = document.getElementById('initials').value;
-    console.log('Initials:', initials, 'Score:', score
+  const initials = document.getElementById('initials').value;
+  // You can save the score and initials using an API or local storage, for simplicity, we'll just log them here
+  console.log('Initials:', initials, 'Score:', score);
+}
 
 function getQuestionText() {
   
